@@ -22,6 +22,7 @@ public class Task {
     private String stopTime;
 
     @NotEmpty
+    @Column(length = 1000)
     private String description;
 
     @ManyToOne
