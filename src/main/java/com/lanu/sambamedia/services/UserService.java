@@ -45,4 +45,12 @@ public class UserService {
 
         return user != null ? true : false;
     }
+
+    public List<User> findAll() {
+        return userRepository.findAll();
+    }
+
+    public List<User> findByName(String name) {
+        return userRepository.findByNameLike("%" + name + "%");
+    }
 }
