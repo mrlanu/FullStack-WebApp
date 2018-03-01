@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org"
-      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-      layout:decorate="~{fragments/main_layout}" >
-<head>
-    <title>Register Form</title>
-</head>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="common/header :: common-header"></head>
+
 <body>
 
-<div  layout:fragment="content" class="container mySpace">
+<div th:replace="common/header :: navbar"></div>
+
+
+<div class="container mySpace">
     <div class="alert alert-danger" th:if="${param.error}">
         <h2>Invalid Email or Password</h2>
     </div>
@@ -26,5 +27,8 @@
 
     </form>
 </div>
+
+<div th:replace="common/header :: body-bottom-scripts"></div>
+
 </body>
 </html>

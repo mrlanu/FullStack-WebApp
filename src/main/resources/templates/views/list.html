@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org"
-      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-      layout:decorate="~{fragments/main_layout}" >
-<head>
-    <title>Success</title>
-</head>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="common/header :: common-header"></head>
+
 <body>
 
-<div  layout:fragment="content" class="container mySpace">
+<div th:replace="common/header :: navbar"></div>
+
+<div class="container mySpace">
     <form action="/users" class="form-inline">
         <div class="form-group mb-2">
             <input type="text" class="form-control" name="name" placeholder="Search User"/>
@@ -36,5 +36,7 @@
         </div>
     </div>
 </div>
+
+<div th:replace="common/header :: body-bottom-scripts"></div>
 </body>
 </html>
