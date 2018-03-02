@@ -112,9 +112,6 @@
     <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" name="Maven: org.webjars:bootstrap:4.0.0-alpha.2" level="project" />
     <orderEntry type="library" name="Maven: org.webjars:jquery:3.2.1" level="project" />
-    <orderEntry type="library" name="Maven: org.webjars:webjars-locator:0.32-1" level="project" />
-    <orderEntry type="library" name="Maven: org.webjars:webjars-locator-core:0.32" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.commons:commons-compress:1.9" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars:datatables:1.10.16" level="project" />
   </component>
 </module>
